@@ -47,3 +47,28 @@ docker run -p 3000:80 puredit-example
 ```
 
 Afterwards, the example can be accessed in a browser on <http://localhost:3000>.
+
+## Generator
+With `example/` you can test the [@puredit/generator](https://github.com/puredit/generator). The folder `generator-input` contains three files with samples to generate projections. Run the following command to generate the `remove` projection for TypeScript:
+
+```sh
+npx @puredit/generator start \
+    --language ts \
+    --target-dir apps/example/src/ts/projections \
+    --parser-module './parser' \
+    --parser-name tsParser \
+    --projection-name remove \
+    --samples apps/example/generator-input/ts-remove.txt
+```
+
+Run the following command to generate the `take` projection for Python:
+```sh
+npx @puredit/generator start \
+    --language py \
+    --target-dir apps/example/src/py/projections \
+    --parser-module './parser' \
+    --parser-name pythonParser \
+    --projection-name take \
+    --samples apps/example/generator-input/py-take.txt
+```
+

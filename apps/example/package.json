@@ -22,6 +22,7 @@
     "@codemirror/view": "6",
     "@lezer/highlight": "1",
     "@puredit/codemirror-typescript": "https://github.com/puredit/codemirror-typescript.git",
+    "@puredit/generator": "https://github.com/puredit/generator.git",
     "@puredit/parser": "https://github.com/puredit/parser.git",
     "@puredit/projections": "https://github.com/puredit/projections.git",
     "@puredit/utils": "https://github.com/puredit/utils.git",
